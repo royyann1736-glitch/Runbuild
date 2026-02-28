@@ -3,14 +3,14 @@ name: Build Flutter APK (zip path OR url)
 on:
   workflow_dispatch:
     inputs:
-      job_id:
+      job_id: 1
         description: "ID job dari Telegram"
         required: true
       zip_path:
         description: "Path zip di repo (mis: uploads/xxx.zip). Kosongkan jika pakai zip_url"
         required: false
         default: ""
-      zip_url:
+      zip_url: 
         description: "Direct URL zip. Kosongkan jika pakai zip_path"
         required: false
         default: ""
